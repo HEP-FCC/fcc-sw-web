@@ -23,50 +23,53 @@
                         <a class="nav-link{% if page.layout == 'title' %} active{% endif %}"
                            href="{{ '' | relative_url }}/">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link"
-                           href="https://hep-fcc.github.io/fcc-tutorials/"
-                           target="_blank">Tutorials</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link{% if page.id == 'documents' %} active{% endif %}"
-                           href="{{ '/documents' | relative_url }}">Documents</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link{% if page.id == 'computing' %} active{% endif %}"
-                           href="{{ '/computing' | relative_url }}">Computing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"
-                           href="https://hep-fcc.github.io/fcc-tutorials/main/fast-sim-and-analysis/k4simdelphes/doc/starterkit/FccFastSimDelphes/Readme.html"
-                           target="_blank">Fast Sim</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"
-                           href="https://fcc-ee-detector-full-sim.docs.cern.ch/"
-                           target="_blank">Full Sim and Reco</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"
-                           href="https://hep-fcc.github.io/FCCAnalyses/"
-                           target="_blank">Analysis</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"
-                           href="https://fcc-physics-events.web.cern.ch/"
-                           target="_blank">Physics Events DB</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"
-                           href="https://fccsw.web.cern.ch/fccsw/phoenix"
-                           target="_blank">Event Display</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav mb-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link{% if page.id == 'contacts' %} active{% endif %}"
-                           href="{{ '/contacts' | relative_url }}">Contacts</a>
-                    </li>
+
+                    <li class="nav-item dropdown active">
+                       <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tools</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                           <a class="dropdown-item" href="https://fcc-physics-events.web.cern.ch/">Physics Events DB</a>
+                           <a class="dropdown-item" href="https://fccsw.web.cern.ch/fccsw/phoenix">Phenix@FCC Event Display</a>
+                           <a class="dropdown-item" href="https://key4hep.github.io/eede/release/">eede EDM4hep visualization</a>
+                       </div>
+                   </li>
+
+                    <li class="nav-item dropdown active">
+                       <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Documentation</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                           <a class="dropdown-item" href="https://hep-fcc.github.io/fcc-tutorials/">Tutorials</a>
+                           <a class="dropdown-item" href="https://hep-fcc.github.io/fcc-tutorials/main/fast-sim-and-analysis/k4simdelphes/doc/starterkit/FccFastSimDelphes/Readme.html">Fast Sim</a>
+                           <a class="dropdown-item" href="https://fcc-ee-detector-full-sim.docs.cern.ch">Full Simulation</a>
+                           <a class="dropdown-item" href="https://hep-fcc.github.io/FCCAnalyses/">FCCAnalysis</a>
+                           <a class="dropdown-item" href="/documents">Presentations/Publications</a>
+                       </div>
+                   </li>
+
+                    <li class="nav-item dropdown active">
+                       <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Get in touch</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                           <a class="dropdown-item" href="https://indico.cern.ch/category/5666">Indico</a>
+                           <a class="dropdown-item" href="/mailing_lists">Mailing lists</a>
+                           <a class="dropdown-item" href="https://fccsw-forum.web.cern.ch/">FCC Software Forum</a>
+                           <a class="dropdown-item" href="https://mattermost.web.cern.ch/fccsw/">FCC PSC mattermost</a>
+                           <a class="dropdown-item" href="https://mattermost.web.cern.ch/signup_user_complete/?id=ea9j3u7pb3refrx4y57d8qhw9y&md=link&sbr=su">Mattermost invite link</a>
+                       </div>
+                   </li>
+
+		    
+                    <li class="nav-item dropdown active">
+                       <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PSC Groups</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                           <a class="dropdown-item" href="/computing">Computing Resources</a>
+                           <a class="dropdown-item" href="/">Documentation and Training (Coming soon)</a>
+                           <a class="dropdown-item" href="/">Core Software/Key4hep/Releases (Coming soon)</a>
+                           <a class="dropdown-item" href="/">Interaction Region, Beam Backgrounds (Coming soon)</a>
+                           <a class="dropdown-item" href="/">Geometry and Simulation (Coming soon)</a>
+                           <a class="dropdown-item" href="/">Digitization and Reconstruction (Coming soon)</a>
+                           <a class="dropdown-item" href="/">MC Production, GRID Tools (Coming soon)</a>
+                           <a class="dropdown-item" href="/">Analysis and Visualization Tools (Coming soon)</a>
+                           <a class="dropdown-item" href="/">MC Generators (Coming soon)</a>
+                       </div>
+                   </li>
                 </ul>
             </div>
         </div>
