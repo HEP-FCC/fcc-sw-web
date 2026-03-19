@@ -1,5 +1,20 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title id="FollowDarkMode">{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description"
+        content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+  <link rel="stylesheet"
+        href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="shortcut icon"
+        type="image/png"
+        href="{{ '/assets/img/favicon.png' | relative_url }}" />
+</head>
+
 <script>
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && document.getElementById("FollowDarkMode") ) {
         document.documentElement.setAttribute('data-bs-theme', 'dark');
         console.log('switching to dark theme');
     }
@@ -10,17 +25,3 @@
     }
 </script>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description"
-        content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-
-  <link rel="stylesheet"
-        href="{{ '/assets/css/main.css' | relative_url }}">
-  <link rel="shortcut icon"
-        type="image/png"
-        href="{{ '/assets/img/favicon.png' | relative_url }}" />
-</head>
