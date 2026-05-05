@@ -42,3 +42,8 @@ exclude: ["Gemfile",
           "vendor/gems/",
           "vendor/ruby/",
           "_bin/"]
+
+collections_dir: collections
+collections:
+  - pubs_talks
+  
