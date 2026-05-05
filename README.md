@@ -2,12 +2,12 @@
 
 Standard `github-pages`-site. All dependencies (`jquery`, `bootstrap`) are
 included in the repository and any change will be automatically deployed to
-<https://fccsw.web.cern.ch/>.
+<https://hep-fcc.github.io/fcc-sw-web/>.
 
 
 ## Local Testing
 
-Change content and for local testing, serve the page with
+Assuming you have a working Jeykll development environment, you can change content and for local testing, serve the page with
 
 ```sh
     bundle exec jekyll serve --baseurl=
