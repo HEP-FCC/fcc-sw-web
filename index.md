@@ -36,7 +36,7 @@ stack and is one of its main stakeholders.
     <a href="/software">Software</a>
     <br>
     <br>
-    <img src="/assets/img/FCC-Logo_RGB_White.png" width="100px">
+    <img src="/assets/img/coding.png" width="150px">
     </h4></center>
     </div>
     <div class="col">
@@ -51,6 +51,10 @@ stack and is one of its main stakeholders.
 </div>
 <br>
 
+<center>
+<h3>
+Current organization
+</h3></center>
 <iframe src="/assets/pdf/PSC_Organization.pdf" width="100%" height="600px"></iframe>
 
 
