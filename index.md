@@ -17,7 +17,7 @@ stack and is one of its main stakeholders.
     <a href="/getting_started">Getting Started</a>
     <br>
     <br>
-    <img src="/assets/img/getting-started.png" width="150px">
+    <img src="assets/img/getting-started.png" width="150px">
     </h4></center>
     </div>
     <div class="col">
@@ -25,7 +25,7 @@ stack and is one of its main stakeholders.
     <a href="/documents">Publications and Presentations</a>
     <br>
     <br>
-    <img src="/assets/img/presentations.png" width="150px">
+    <img src="assets/img/presentations.png" width="150px">
     </h4></center>
     </div>
   </div>
@@ -36,7 +36,7 @@ stack and is one of its main stakeholders.
     <a href="/software">Software</a>
     <br>
     <br>
-    <img src="/assets/img/coding.png" width="150px">
+    <img src="assets/img/coding.png" width="150px">
     </h4></center>
     </div>
     <div class="col">
@@ -44,7 +44,7 @@ stack and is one of its main stakeholders.
     <a href="/computing">Analysis and Computing</a>
     <br>
     <br>
-    <img src="/assets/img/data-analysis.png" width="150px">
+    <img src="assets/img/data-analysis.png" width="150px">
     </h4></center>
     </div>
   </div>
@@ -55,6 +55,6 @@ stack and is one of its main stakeholders.
 <h3>
 Current organization
 </h3></center>
-<iframe src="/assets/pdf/PSC_Organization.pdf" width="100%" height="600px"></iframe>
+<iframe src="assets/pdf/PSC_Organization.pdf" width="100%" height="600px"></iframe>
 
 
