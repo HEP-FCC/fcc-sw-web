@@ -1,17 +1,9 @@
 ---
 layout: site
-id: contacts
+permalink: /mailing_lists.html
 ---
 
-# Contacts
-
-Having contributed to the successful delivery of the comprehensive feasibility
-study for the FCC project, FCC Software is now focusing its efforts on the
-pre-TDR phase. To facilitate this ongoing collaboration, the FCC Software team
-provides multiple avenues for contact.
-
-
-## Mailing lists
+# Mailing lists
 
 List of all mailing lists related to the FCC Software can be found by searching
 the FCC PED mailing lists [here][fcc-ped-mails-all].
@@ -25,19 +17,6 @@ In particular the following lists might be of interest:
 * [FCC-PED-SoftwareAndComputing-MDI][fcc-ped-mail-mdi]
 * [FCC-PED-SoftwareAndComputing-Resource][fcc-ped-mail-resource]
 
-
-<h2>Mattermost</h2>
-
-For a little more lively communication one can join our
-[FCC Software Mattermost Team][fccsw-mattermost].
-
-
-<h2>Forum</h2>
-
-Technical issues of broader interest, but also beginner questions, can be
-discussed in the [FCC Software Forum][fccsw-forum].
-
-
 [fcc-ped-mails-all]: https://groups.cern.ch/Pages/GroupSearch.aspx?k=FCC-PED-SoftwareAndComputing*
 [fcc-ped-mail-analysis]: https://e-groups.cern.ch/e-groups/Egroup.do?egroupName=FCC-PED-SoftwareAndComputing-Analysis
 [fcc-ped-mail-detector]: https://e-groups.cern.ch/e-groups/Egroup.do?egroupName=FCC-PED-SoftwareAndComputing-Detector
@@ -46,6 +25,3 @@ discussed in the [FCC Software Forum][fccsw-forum].
 [fcc-ped-mail-mdi]: https://e-groups.cern.ch/e-groups/Egroup.do?egroupName=FCC-PED-SoftwareAndComputing-MDI
 [fcc-ped-mail-resource]: https://e-groups.cern.ch/e-groups/Egroup.do?egroupName=FCC-PED-SoftwareAndComputing-Resource
 
-[fccsw-mattermost]: https://mattermost.web.cern.ch/fccsw/
-
-[fccsw-forum]: https://fccsw-forum.web.cern.ch/

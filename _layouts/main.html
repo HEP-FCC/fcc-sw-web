@@ -10,10 +10,19 @@
             <div class="p-3 mb-4 rounded-3 bg-dark bg-opacity-10">
                 <div class="container-fluid py-3">
                     <div class="row align-items-center">
-                        <div class="col-lg-5 order-lg-2 mb-5 mb-lg-0">
+                      <div class="col-lg-5 order-lg-2 mb-5 mb-lg-0">
+			<picture>
+			  <!-- User prefers light mode: -->
+			  <source srcset="/assets/img/logo-dark.png" media="(prefers-color-scheme: light)"/>
+			  
+			  <!-- User prefers dark mode: -->
+			  <source srcset="/assets/img/FCC-Logo_RGB_White.png"  media="(prefers-color-scheme: dark)"/>
+			  
+			  <!-- User has no color preference: -->
                             <img class="img-fluid float-lg-end mx-auto d-block"
                                  alt="Future Circular Collider"
-                                 src="{{ '/assets/img/logo-dark.png' | relative_url }}">
+                                 src="/assets/img/logo-dark.png">
+			</picture>
                         </div>
                         <div class="col-lg-7 order-lg-1">
                             <h1 class="font-monospace fcc-logo">{{ site.title }}</h1>
@@ -24,11 +33,11 @@
             </div>
 
             <div class="row">
-                <div class="col-lg-9">
+                <div class="col">
                     {{ content }}
                 </div>
                 <div class="col-lg-3">
-                  <p class="h3">FCC Software Meetings</p>
+                  <p class="h3">FCC PS&C Meetings</p>
                   <div class="ratio ratio-fccsw-meetings">
                     <iframe src="https://fccsw.web.cern.ch/fccsw-meetings/"
                             title="FCC Software Meetings"></iframe>

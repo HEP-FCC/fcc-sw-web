@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: FCC&nbsp;Software
+title: FCC&nbsp;PS&C
 # title: FCC Software
 description: >
-  Physics software for the Future Circular Collider.
+  Physics software and computing for the Future Circular Collider.
 url: "" # the subpath of your site, e.g. /blog
 
 # Build settings
@@ -42,3 +42,8 @@ exclude: ["Gemfile",
           "vendor/gems/",
           "vendor/ruby/",
           "_bin/"]
+
+collections_dir: collections
+collections:
+  - pubs_talks
+  
