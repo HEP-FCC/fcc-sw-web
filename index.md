@@ -14,7 +14,7 @@ stack and is one of its main stakeholders.
   <div class="row">
     <div class="col">
     <center><h4>
-    <a href="/getting_started">Getting Started</a>
+    <a href="{{ '/getting_started' | relative_url }}">Getting Started</a>
     <br>
     <br>
     <img src="assets/img/getting-started.png" width="150px">
@@ -22,7 +22,7 @@ stack and is one of its main stakeholders.
     </div>
     <div class="col">
     <center><h4>
-    <a href="/documents">Publications and Presentations</a>
+    <a href="{{ '/documents' | relative_url }}">Publications and Presentations</a>
     <br>
     <br>
     <img src="assets/img/presentations.png" width="150px">
@@ -33,7 +33,7 @@ stack and is one of its main stakeholders.
   <div class="row">
     <div class="col">
     <center><h4>
-    <a href="/software">Software</a>
+    <a href="{{ '/software' | relative_url }}">Software</a>
     <br>
     <br>
     <img src="assets/img/coding.png" width="150px">
@@ -41,7 +41,7 @@ stack and is one of its main stakeholders.
     </div>
     <div class="col">
     <center><h4>
-    <a href="/computing">Analysis and Computing</a>
+    <a href="{{ '/computing' | relative_url }}">Analysis and Computing</a>
     <br>
     <br>
     <img src="assets/img/data-analysis.png" width="150px">
