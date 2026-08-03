@@ -55,6 +55,6 @@ stack and is one of its main stakeholders.
 <h3>
 Current organization
 </h3></center>
-<iframe src="assets/pdf/PSC_Organization.pdf" width="100%" height="600px"></iframe>
+<object data="assets/img/PSC_Organization.svg" type="image/svg+xml" width="100%"></object>
 
 
