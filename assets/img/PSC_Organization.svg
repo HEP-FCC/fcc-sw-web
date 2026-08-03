@@ -71,8 +71,8 @@
 </defs>
 <g>
 <g clip-path="url(#clip_1)">
-<path transform="matrix(.001968504,0,0,.001968504,0,0)" d="M0 0H365760V205740H0Z" fill="#ffffff" fill-rule="evenodd"/>
-<path transform="matrix(.001968504,0,0,.001968504,0,0)" d="M0-40.9982H365760V205699H0Z" fill="#f3f3f3" fill-rule="evenodd"/>
+
+
 <path transform="matrix(.001968504,0,0,.001968504,0,0)" stroke-width="579" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#999999" d="M0-40.9982H365760V205699H0Z"/>
 <path transform="matrix(.001968504,0,0,.001968504,0,0)" d="M128503.9 5821.3435H237715.9V49153.345H128503.9Z" fill="#f3f3f3" fill-rule="evenodd"/>
 <path transform="matrix(.001968504,0,0,.001968504,0,0)" stroke-width="579" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#999999" d="M128503.9 5821.3435H237715.9V49153.345H128503.9Z"/>
