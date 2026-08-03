@@ -33,7 +33,8 @@ article a:hover { text-decoration: underline; }
 article a:active { text-decoration: underline; }
 
 article pre {
-  background: $light;
+  background: var(--bs-secondary-bg);
+  color: var(--bs-body-color);
   border-radius: $border-radius;
   padding: $spacer;
 }
