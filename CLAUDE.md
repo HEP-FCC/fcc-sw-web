@@ -1,4 +1,4 @@
-# FCC PSC Website — Claude Notes
+# FCC PS&C Website — Claude Notes
 
 ## Building the site locally
 
@@ -64,7 +64,7 @@ conda activate fcc-web
 python assets/pdf_to_svg_with_links.py <input.pdf> <output.svg>
 ```
 
-## Updating the PSC organization grid
+## Updating the PS&C organization grid
 
 The homepage shows a Bootstrap grid of PSC groups rendered from `_data/psc_groups.yml`.
 The SVG (`assets/img/PSC_Organization.svg`) is kept as source material but is no longer

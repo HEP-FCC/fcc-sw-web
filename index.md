@@ -11,7 +11,7 @@ stack and is one of its main stakeholders.
 
 
 <div class="container">
-  <div class="row g-4">
+  <div class="row g-4 justify-content-center" style="max-width: 85%; margin: 0 auto;">
     <div class="col-sm-6">
       <a href="{{ '/getting_started' | relative_url }}" class="text-decoration-none">
         <div class="card h-100 text-center fcc-nav-card" style="border-top: 4px solid #198754;">
@@ -56,8 +56,8 @@ stack and is one of its main stakeholders.
 </div>
 <br>
 
-<div style="border-top: 4px solid #0d6efd; margin-bottom: 0.75rem;"></div>
-<center><h3>Current organization</h3></center>
+<div style="border-top: 4px solid #0d6efd; margin-top: 2rem; margin-bottom: 0.75rem;"></div>
+<center><h3 class="mb-3">Current organization</h3></center>
 
 <div class="container-fluid px-0">
   <div class="row g-2">

@@ -13,7 +13,7 @@ conveners:
     institute: "MIT"
 ---
 
-[Mandate](Mandate) &#124; [Intro slides @PSC](https://indico.cern.ch/event/1668596/contributions/7014766/attachments/3259323/5818928/BIB-MDI%20coordination.pdf)
+[Mandate](Mandate) &#124; [Intro slides @PS&C](https://indico.cern.ch/event/1668596/contributions/7014766/attachments/3259323/5818928/BIB-MDI%20coordination.pdf)
 
 Initial page to gather recipes for FCCee MDI-related software. You will find information about the following set of procedures:
 - MDI geometry definition & recommendations on how to use it in the simulation
