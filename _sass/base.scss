@@ -87,6 +87,26 @@ article pre {
   }
 }
 
+.psc-org-grid {
+  display: grid !important;
+  grid-auto-rows: 1fr;
+  gap: 0.5rem;
+  grid-template-columns: 1fr;
+
+  @include media-breakpoint-up(sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include media-breakpoint-up(md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  > div {
+    width: auto !important;
+    max-width: none !important;
+    padding: 0 !important;
+  }
+}
+
 .psc-group-card {
   min-height: 80px;
   border: 1px solid var(--bs-border-color);
