@@ -68,10 +68,17 @@ stack and is one of its main stakeholders.
             <div class="col-6 d-flex">
               <div class="card w-100 psc-group-card text-center">
                 <div class="card-body d-flex flex-column align-items-center justify-content-center py-2 px-1">
-                  <div class="fw-semibold small">{{ sub.subtitle }}</div>
+                  <div class="fw-semibold small">
+                    {% if forloop.first and group.local_link %}
+                      <a href="{{ group.local_link | relative_url }}" class="text-decoration-none text-body">{{ sub.subtitle }}</a>
+                    {% else %}
+                      {{ sub.subtitle }}
+                    {% endif %}
+                  </div>
                   {% if sub.gms_link %}
                   <a href="{{ sub.gms_link }}" class="small mt-1" target="_blank">Mailing list</a>
                   {% endif %}
+                  {% if sub.shared_with_physics %}<div><span class="badge text-bg-secondary mt-1" style="font-size:0.6em; font-weight:normal;">Shared with Physics</span></div>{% endif %}
                 </div>
               </div>
             </div>
@@ -92,6 +99,7 @@ stack and is one of its main stakeholders.
               {% if group.gms_link %}
               <a href="{{ group.gms_link }}" class="small mt-1" target="_blank">Mailing list</a>
               {% endif %}
+              {% if group.shared_with_physics %}<div><span class="badge text-bg-secondary mt-1" style="font-size:0.6em; font-weight:normal;">Shared with Physics</span></div>{% endif %}
             </div>
           </div>
         </div>

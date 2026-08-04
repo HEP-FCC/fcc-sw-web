@@ -1,0 +1,57 @@
+---
+layout: site
+---
+
+<h1>{{ page.title }}</h1>
+
+{% if page.conveners or page.subgroups or page.mailing_lists or page.meetings %}
+<div class="mb-4 p-3 rounded-3 bg-body-secondary">
+  {% if page.subgroups %}
+    {% for sg in page.subgroups %}
+    <div class="mb-1">
+      <span class="fw-semibold">{{ sg.name }}:</span>
+      {% for c in sg.conveners %}{% unless forloop.first %}, {% endunless %}{{ c.name }} ({{ c.institute }}){% endfor %}
+      {% if sg.mailing_list %}(<a href="{{ sg.mailing_list }}" target="_blank">egroup</a>){% endif %}
+    </div>
+    {% endfor %}
+  {% elsif page.conveners and page.conveners.size > 0 %}
+  <div class="mb-1">
+    <span class="fw-semibold">Conveners:</span>
+    {% for c in page.conveners %}{% unless forloop.first %}, {% endunless %}{{ c.name }} ({{ c.institute }}){% endfor %}
+    {% for ml in page.mailing_lists %}
+      {% if ml.name %}(<a href="{{ ml.url }}" target="_blank">{{ ml.name }} egroup</a>)
+      {% else %}(<a href="{{ ml.url }}" target="_blank">egroup</a>)
+      {% endif %}
+    {% endfor %}
+  </div>
+  {% endif %}
+  {% if page.meetings %}
+  <div>
+    <span class="fw-semibold">Meetings:</span>
+    {{ page.meetings.schedule }}
+    {% if page.meetings.indico %}
+    (<a href="{{ page.meetings.indico }}" target="_blank">Indico category</a>)
+    {% endif %}
+  </div>
+  {% endif %}
+</div>
+{% endif %}
+
+{% if page.contacts_table %}
+<table class="table table-bordered table-sm mx-auto" style="max-width: 600px;">
+  <thead>
+    <tr><th>Group</th><th>Contacts</th><th>Links</th></tr>
+  </thead>
+  <tbody>
+    {% for row in page.contacts_table %}
+    <tr>
+      <td>{{ row.group }}</td>
+      <td>{% for c in row.contacts %}{% unless forloop.first %}<br>{% endunless %}{{ c.name }} ({{ c.institute }}){% endfor %}</td>
+      <td>{% for l in row.links %}{% unless forloop.first %}<br>{% endunless %}<a href="{{ l.url }}" target="_blank">{{ l.label }}</a>{% endfor %}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+
+{{ content }}

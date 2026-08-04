@@ -1,9 +1,17 @@
 ---
-layout: site
+layout: group
+title: "Computing Resources"
 permalink: /computing.html
+mailing_lists:
+  - url: "https://gms.web.cern.ch/group/fcc-ped-softwareandcomputing-resource/details"
+conveners:
+  - name: "Giovanni Guerrieri"
+    institute: "CERN"
+  - name: "Lena Herrmann"
+    institute: "CERN"
 ---
 
-# Accessing FCC Data and Compute
+## Accessing FCC Data and Compute
 * FCCAnalysis
 * [FCCDIRAC](https://github.com/HEP-FCC/FCCDIRAC): User and production workflows
     for iLCDirac/DIRAC system.
