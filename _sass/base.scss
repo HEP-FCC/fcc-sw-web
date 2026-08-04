@@ -59,6 +59,11 @@ article pre {
 
 .fccsw-meetings-container {
   min-height: 400px;
+  @media (prefers-color-scheme: dark) {
+    iframe {
+      filter: invert(1) hue-rotate(180deg) contrast(0.74);
+    }
+  }
 }
 
 .fcc-nav-card {
