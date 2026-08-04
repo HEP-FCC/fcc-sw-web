@@ -1,0 +1,46 @@
+# PSC Organization groups, extracted from assets/img/PSC_Organization.svg
+# Re-run assets/extract_psc_groups.py when the SVG is updated, then clean up titles here.
+# split: true marks a cell that is visually divided into two sub-groups side by side.
+
+# Row 1
+- title: "Documentation and Trainings"
+  gms_link: "https://gms.web.cern.ch/group/fcc-ped-softwareandcomputing-documentation/details"
+
+- title: "Physics Software and Computing Coordinators"
+  gms_link: "https://gms.web.cern.ch/group/fcc-ped-softwareandcomputing/details"
+
+- title: "Computing Resources"
+  gms_link: "https://gms.web.cern.ch/group/fcc-ped-softwareandcomputing-resource/details"
+
+# Row 2
+- title: "Core Software, Key4hep, Releases"
+  gms_link: "https://gms.web.cern.ch/group/fcc-ped-softwareandcomputing-core/details"
+
+- title: "Geometry and Simulation"
+  gms_link: "https://gms.web.cern.ch/group/fcc-ped-softwareandcomputing-full-simulation/details"
+
+- title: "MC Production and GRID Tools"
+  gms_link: "https://gms.web.cern.ch/group/fcc-ped-softwareandcomputing-resource/details"
+
+# Row 3
+- title: "Interaction Region, Beam Backgrounds in Detectors"
+  gms_link: "https://gms.web.cern.ch/group/fcc-ped-softwareandcomputing-mdi/details"
+  local_link: "/mdi"
+
+- split: true
+  sub:
+    - subtitle: "DIGI-RECO SW"
+      gms_link: "https://gms.web.cern.ch/group/fcc-ped-softwareandcomputing-digireco/details"
+    - subtitle: "High Level Reco"
+      gms_link: "https://gms.web.cern.ch/group/fcc-ped-physicsgroup-highlevelreco/details"
+
+- title: "Analysis and Visualization Tools"
+  gms_link: "https://gms.web.cern.ch/group/fcc-ped-softwareandcomputing-analysis/details"
+
+# Row 4
+- title: "Detector Concept Contacts"
+
+- title: "Sub-detector Contacts"
+
+- title: "MC Generators"
+  gms_link: "https://gms.web.cern.ch/group/fcc-ped-softwareandcomputing-generators/details"

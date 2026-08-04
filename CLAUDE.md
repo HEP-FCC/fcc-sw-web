@@ -64,37 +64,33 @@ conda activate fcc-web
 python assets/pdf_to_svg_with_links.py <input.pdf> <output.svg>
 ```
 
-## Adding internal links to text in the PSC Organization SVG
+## Updating the PSC organization grid
 
-The SVG at `assets/img/PSC_Organization.svg` has transparent `<rect>` overlays (added by `pdf_to_svg_with_links.py`) that cover text lines and link to external GMS group pages. To add an additional internal link for a text label:
+The homepage shows a Bootstrap grid of PSC groups rendered from `_data/psc_groups.yml`.
+The SVG (`assets/img/PSC_Organization.svg`) is kept as source material but is no longer
+embedded on the page.
 
-**Step 1 — find the y-coordinates of the text characters:**
-```python
-import re
-svg = open('assets/img/PSC_Organization.svg').read()
-uses = re.findall(r'<use data-text=\"(.)\" xlink:href=\"#[^\"]+\" transform=\"matrix\([^,]+,[^,]+,[^,]+,[^,]+,([0-9.]+),([0-9.]+)\)\"', svg)
-lines = {}
-for char, x, y in uses:
-    xf, yf = float(x), float(y)
-    if 35 <= xf <= 210 and 220 <= yf <= 310:   # adjust range to the box of interest
-        lines.setdefault(round(yf, 1), []).append((xf, char))
-for y in sorted(lines):
-    print(f'y={y}: {"".join(c for x,c in sorted(lines[y]))}')
+To update the grid after regenerating the SVG from a new PDF:
+
+```bash
+python3 assets/extract_psc_groups.py
 ```
 
-**Step 2 — find the existing GMS link rect** for that text (via `grep`) to get its x, width, and y values.
-
-**Step 3 — add a new rect** covering the text lines that sit ABOVE the existing GMS rect. The text baselines are roughly 24px above the GMS rect's y. Add the new link just before the existing one in the SVG:
-
-```xml
-<a href="/target-page" target="_top"><rect x="35.34" y="232.00" width="165.82" height="34.34" fill="transparent" stroke="none"/></a>
-<a href="https://gms.web.cern.ch/..." target="_blank"><rect x="35.34" y="266.34" width="165.82" height="12.75" fill="transparent" stroke="none"/></a>
+This rewrites `_data/psc_groups.yml`. After running, manually:
+1. Fix any garbled title strings (GMS group IDs sometimes bleed into extracted text).
+2. Restore the `split: true` entry for the DIGI-RECO SW / High Level Reco cell (row 3, column 2):
+```yaml
+- split: true
+  sub:
+    - subtitle: "DIGI-RECO SW"
+      gms_link: "https://gms.web.cern.ch/group/fcc-ped-softwareandcomputing-digireco/details"
+    - subtitle: "High Level Reco"
+      gms_link: "https://gms.web.cern.ch/group/fcc-ped-physicsgroup-highlevelreco/details"
 ```
+3. Restore the `local_link: "/mdi"` on the MDI entry so the title links to the internal page.
 
-Key points:
-- Use `target="_top"` for internal links (SVG is embedded via `<object>`, so `_top` navigates the parent page).
-- Height of the new rect = GMS rect y − new rect y (so they meet without overlapping).
-- The existing MDI text `/mdi` link uses x=35.34, y=232.00, width=165.82, height=34.34 as a reference.
+To add an internal page link to any card, add `local_link: "/page-path"` to its entry in the YAML.
+The card title will become a link; the GMS mailing list link appears below it.
 
 ## Layout conventions
 

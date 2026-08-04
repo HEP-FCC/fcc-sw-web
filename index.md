@@ -56,10 +56,48 @@ stack and is one of its main stakeholders.
 </div>
 <br>
 
-<center>
-<h3>
-Current organization
-</h3></center>
-<object data="assets/img/PSC_Organization.svg" type="image/svg+xml" width="100%"></object>
+<center><h3>Current organization</h3></center>
+
+<div class="container-fluid px-0">
+  <div class="row g-2">
+    {% for group in site.data.psc_groups %}
+      {% if group.split %}
+        <div class="col-md-4 col-sm-6">
+          <div class="row g-2 h-100">
+            {% for sub in group.sub %}
+            <div class="col-6 d-flex">
+              <div class="card w-100 psc-group-card text-center">
+                <div class="card-body d-flex flex-column align-items-center justify-content-center py-2 px-1">
+                  <div class="fw-semibold small">{{ sub.subtitle }}</div>
+                  {% if sub.gms_link %}
+                  <a href="{{ sub.gms_link }}" class="small mt-1" target="_blank">Mailing list</a>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      {% else %}
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100 psc-group-card text-center">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center py-2">
+              <div class="fw-semibold small">
+                {% if group.local_link %}
+                  <a href="{{ group.local_link | relative_url }}" class="text-decoration-none text-body">{{ group.title }}</a>
+                {% else %}
+                  {{ group.title }}
+                {% endif %}
+              </div>
+              {% if group.gms_link %}
+              <a href="{{ group.gms_link }}" class="small mt-1" target="_blank">Mailing list</a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
 
 
