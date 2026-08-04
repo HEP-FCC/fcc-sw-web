@@ -63,27 +63,24 @@ stack and is one of its main stakeholders.
   <div class="row g-2 psc-org-grid">
     {% for group in site.data.psc_groups %}
       {% if group.split %}
+        {% assign sub0 = group.sub[0] %}
+        {% assign sub1 = group.sub[1] %}
         <div class="col-md-4 col-sm-6">
-          <div class="row g-2 h-100">
-            {% for sub in group.sub %}
-            <div class="col-6 d-flex">
-              <div class="card w-100 psc-group-card text-center" {% if sub.color %}style="border-top: 3px solid {{ sub.color }};"{% endif %}>
-                <div class="card-body d-flex flex-column align-items-center justify-content-start py-2 px-1">
-                  <div class="fw-semibold small">
-                    {% if forloop.first and group.local_link %}
-                      <a href="{{ group.local_link | relative_url }}" class="text-decoration-none text-body">{{ sub.subtitle }}</a>
-                    {% else %}
-                      {{ sub.subtitle }}
-                    {% endif %}
-                  </div>
-                  {% if sub.gms_link %}
-                  <a href="{{ sub.gms_link }}" class="small mt-1" target="_blank">Mailing list</a>
-                  {% endif %}
-                  {% if sub.shared_with_physics %}<div><span class="badge text-bg-secondary mt-1" style="font-size:0.6em; font-weight:normal;">Shared with Physics</span></div>{% endif %}
+          <div class="card h-100 psc-group-card text-center" style="border-top: 3px solid; border-image: linear-gradient(to right, {{ sub0.color }} 50%, {{ sub1.color }} 50%) 1;">
+            <div class="card-body d-flex flex-row justify-content-start py-2 px-0">
+              <div class="d-flex flex-column align-items-center justify-content-start py-0 px-2 w-50">
+                <div class="fw-semibold small">
+                  {% if group.local_link %}<a href="{{ group.local_link | relative_url }}" class="text-decoration-none text-body">{{ sub0.subtitle }}</a>{% else %}{{ sub0.subtitle }}{% endif %}
                 </div>
+                {% if sub0.gms_link %}<a href="{{ sub0.gms_link }}" class="small mt-1" target="_blank">Mailing list</a>{% endif %}
+              </div>
+              <div style="width: 3px; background-color: var(--bs-border-color); align-self: stretch;"></div>
+              <div class="d-flex flex-column align-items-center justify-content-start py-0 px-2 w-50">
+                <div class="fw-semibold small">{{ sub1.subtitle }}</div>
+                {% if sub1.gms_link %}<a href="{{ sub1.gms_link }}" class="small mt-1" target="_blank">Mailing list</a>{% endif %}
+                {% if sub1.shared_with_physics %}<div><span class="badge text-bg-secondary mt-1" style="font-size:0.6em; font-weight:normal;">Shared with Physics</span></div>{% endif %}
               </div>
             </div>
-            {% endfor %}
           </div>
         </div>
       {% else %}
