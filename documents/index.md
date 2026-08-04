@@ -6,14 +6,18 @@ id: documents
 
 # FCC PS&C related publications and presentations
 
-## Feasibility Study Report
+This page collects publications and presentations on results related to FCC Physics Software and Computing. If you would like to add a contribution, please create an issue or pull request on [GitHub](https://github.com/HEP-FCC/FCCSW).
+
+## Publications
+
+### Feasibility Study Report
 
 [Future Circular Collider Feasibility Study Report Volume 1: Physics and Experiments](https://cds.cern.ch/record/2928193)
 provides an overview of the physics case, experimental programme, and detector
 concepts along with the description of the software and computing employed.
 
 
-## Conceptual Design Report
+### Conceptual Design Report
 
 The [summary volumes](https://fcc-cdr.web.cern.ch/) have been released, with
 many physics and detector simulations carried out using the FCC Software. We
@@ -22,8 +26,6 @@ group to make the workflows used in the CDR reproducible and accessible for
 future studies. [Here](https://github.com/reanahub/reana-demo-fcchh-fullsim) is
 a first example of a full-simulation workflow.
 
-
-## Publications
 
 {% assign sorted_pubs_talks = site.pubs_talks | sort: 'date' | reverse %}
 {% assign publications = sorted_pubs_talks | where: "type", "publication" %}
@@ -40,7 +42,7 @@ a first example of a full-simulation workflow.
   {% assign pub_year = pub_talk.date | date: '%Y' %}
   {% if pub_year != last_year %}
     {% assign last_year = pub_year %}
-    <h2 style="text-indent: -30px;"> {{pub_year}}: </h2>
+    <h3 style="text-indent: -30px;"> {{pub_year}}: </h3>
   {% endif %}
   {% assign extra_mat_end = pub_talk.citation | prepend: "(" | append: ")" %}
   <li> {{ pub_talk.date | date: "%-d %B %Y"}}: <a href="{{pub_talk.link}}">{{pub_talk.name}}</a> {{extra_mat_end}} </li>
@@ -54,12 +56,6 @@ a first example of a full-simulation workflow.
 {% endif %}
 
 ## Presentations
-
-Besides the contributions included in the Feasibility Study report and
-Conceptual Design report, there were numerous software sessions at FCC
-conferences and related workshops. The following list is very incomplete, please
-submit other contributions to be included here by creating an issue on
-[Github](https://github.com/HEP-FCC/FCCSW).
 
 {% assign presentations = sorted_pubs_talks | where_exp: "item", "item.type != 'publication'" %}
 {% assign total_pres = 0 %}
@@ -88,7 +84,7 @@ submit other contributions to be included here by creating an issue on
   {% assign pub_year = pub_talk.date | date: '%Y' %}
   {% if pub_year != last_year %}
     {% assign last_year = pub_year %}
-    <h2 style="text-indent: -30px;"> {{pub_year}}: </h2>
+    <h3 style="text-indent: -30px;"> {{pub_year}}: </h3>
   {% endif %}
   {% assign extra_mat_begin = '' %}
   {% if pub_talk.type == "event" %}

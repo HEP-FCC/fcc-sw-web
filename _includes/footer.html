@@ -20,3 +20,11 @@
 
 <script src="{{ '/assets/js/jquery-3.7.1.min.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/bootstrap-5.3.3/bootstrap.bundle.min.js' | relative_url }}"></script>
+<script>
+  document.querySelectorAll('a[href^="http"]').forEach(function(a) {
+    if (a.hostname !== window.location.hostname) {
+      a.setAttribute('target', '_blank');
+      a.setAttribute('rel', 'noopener noreferrer');
+    }
+  });
+</script>
