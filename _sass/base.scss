@@ -32,6 +32,10 @@ article a:visited { text-decoration: none; }
 article a:hover { text-decoration: underline; }
 article a:active { text-decoration: underline; }
 
+article h1 {
+  text-align: center;
+}
+
 article pre {
   background: var(--bs-secondary-bg);
   color: var(--bs-body-color);

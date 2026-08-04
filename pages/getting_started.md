@@ -3,7 +3,7 @@ layout: site
 permalink: /getting_started.html
 ---
 
-## Getting Started with FCC Software and Analysis
+# Getting Started with FCC Software and Analysis
 
 
 * Join the [FCC physics software and computing Mattermost team](https://mattermost.web.cern.ch/signup_user_complete/?id=ea9j3u7pb3refrx4y57d8qhw9y&md=link&sbr=su)

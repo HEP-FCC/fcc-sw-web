@@ -1,6 +1,6 @@
 ---
 layout: site
-id: computing
+permalink: /computing_at_cern.html
 ---
 
 # Computing
