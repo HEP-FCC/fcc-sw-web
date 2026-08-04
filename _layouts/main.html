@@ -7,10 +7,10 @@
 
         {% include header.html %}
         <article class="container mt-3 mb-4">
-            <div class="mb-4 rounded-3 bg-dark bg-opacity-10" style="border-top: 4px solid #0d6efd;">
+            <div class="mb-4 rounded-3 bg-body-secondary" style="border-top: 4px solid #0d6efd;">
                 <div class="container-fluid py-3 px-0">
                     <div class="row align-items-center">
-                      <div class="col-lg-5 order-lg-2 mb-5 mb-lg-0">
+                      <div class="col-lg-5 order-lg-2 mb-5 mb-lg-0 pe-4">
 			<picture style="max-width: 75%; display: block; margin-left: auto;">
 			  <!-- User prefers light mode: -->
 			  <source srcset="assets/img/logo-dark.png" media="(prefers-color-scheme: light)"/>
@@ -25,8 +25,8 @@
 			</picture>
                         </div>
                         <div class="col-lg-7 order-lg-1 ps-4">
-                            <h1 class="font-monospace fcc-logo">{{ site.title }}</h1>
-                            <p>{{ page.subtitle | default: site.description | strip_html | normalize_whitespace | truncate: 100 | escape }}</p>
+                            <h1 class="font-monospace fcc-logo text-start">{{ site.title }}</h1>
+                            <p style="margin-left: 6px;">{{ page.subtitle | default: site.description | strip_html | normalize_whitespace | truncate: 100 | escape }}</p>
                         </div>
                     </div>
                 </div>
