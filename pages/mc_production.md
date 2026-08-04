@@ -14,4 +14,7 @@ meetings:
   indico: "https://indico.cern.ch/category/17971/"
 ---
 
-*Coming soon.*
+* [FCCDIRAC](https://github.com/HEP-FCC/FCCDIRAC): User and production workflows
+    for iLCDirac/DIRAC system.
+
+* *Coming soon.*

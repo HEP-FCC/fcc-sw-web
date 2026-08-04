@@ -43,11 +43,11 @@ stack and is one of its main stakeholders.
       </a>
     </div>
     <div class="col-sm-6">
-      <a href="{{ '/computing' | relative_url }}" class="text-decoration-none">
+      <a href="{{ '/analysis.html' | relative_url }}" class="text-decoration-none">
         <div class="card h-100 text-center fcc-nav-card">
           <div class="card-body d-flex flex-column align-items-center justify-content-center py-4">
             <img src="assets/img/data-analysis.png" width="100px" class="mb-3">
-            <h4 class="card-title mb-0">Analysis and Computing</h4>
+            <h4 class="card-title mb-0">FCC Analysis</h4>
           </div>
         </div>
       </a>
