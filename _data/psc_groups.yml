@@ -6,54 +6,67 @@
 - title: "Documentation and Trainings"
   local_link: "/documentation.html"
   gms_link: "https://gms.web.cern.ch/group/fcc-ped-softwareandcomputing-documentation/details"
+  color: "#fce5cd"
 
 - title: "Physics Software and Computing Coordinators"
   gms_link: "https://gms.web.cern.ch/group/fcc-ped-softwareandcomputing/details"
+  color: "#f3f3f3"
 
 - title: "Computing Resources"
   local_link: "/computing"
   gms_link: "https://gms.web.cern.ch/group/fcc-ped-softwareandcomputing-resource/details"
+  color: "#ead1dc"
 
 # Row 2
 - title: "Core Software, Key4hep, Releases"
   local_link: "/core-software.html"
   gms_link: "https://gms.web.cern.ch/group/fcc-ped-softwareandcomputing-core/details"
+  color: "#ea9999"
 
 - title: "Geometry and Simulation"
   local_link: "/geometry-simulation.html"
   gms_link: "https://gms.web.cern.ch/group/fcc-ped-softwareandcomputing-full-simulation/details"
+  color: "#c9daf8"
 
 - title: "MC Production and GRID Tools"
   local_link: "/mc-production.html"
   gms_link: "https://gms.web.cern.ch/group/fcc-ped-softwareandcomputing-resource/details"
+  color: "#ead1dc"
 
 # Row 3
 - title: "Interaction Region, Beam Backgrounds in Detectors"
   local_link: "/mdi"
   gms_link: "https://gms.web.cern.ch/group/fcc-ped-softwareandcomputing-mdi/details"
+  color: "#c9daf8"
 
 - split: true
   local_link: "/digireco.html"
   sub:
     - subtitle: "DIGI-RECO SW"
       gms_link: "https://gms.web.cern.ch/group/fcc-ped-softwareandcomputing-digireco/details"
+      color: "#c9daf8"
     - subtitle: "High Level Reco"
       gms_link: "https://gms.web.cern.ch/group/fcc-ped-physicsgroup-highlevelreco/details"
+      color: "#d9d2e9"
       shared_with_physics: true
 
 - title: "Analysis and Visualization Tools"
   local_link: "/analysis.html"
   gms_link: "https://gms.web.cern.ch/group/fcc-ped-softwareandcomputing-analysis/details"
+  color: "#ead1dc"
   shared_with_physics: true
 
 # Row 4
 - title: "Detector Concept Contacts"
   local_link: "/detector-contacts.html"
+  color: "#c9daf8"
 
 - title: "Sub-detector Contacts"
   local_link: "/subdetector-contacts.html"
+  color: "#c9daf8"
 
 - title: "MC Generators"
   local_link: "/generators.html"
   gms_link: "https://gms.web.cern.ch/group/fcc-ped-softwareandcomputing-generators/details"
+  color: "#ead1dc"
   shared_with_physics: true

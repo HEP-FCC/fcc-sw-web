@@ -14,7 +14,7 @@ stack and is one of its main stakeholders.
   <div class="row g-4">
     <div class="col-sm-6">
       <a href="{{ '/getting_started' | relative_url }}" class="text-decoration-none">
-        <div class="card h-100 text-center fcc-nav-card">
+        <div class="card h-100 text-center fcc-nav-card" style="border-top: 4px solid #198754;">
           <div class="card-body d-flex flex-column align-items-center justify-content-center py-4">
             <img src="assets/img/getting-started.png" width="100px" class="mb-3">
             <h4 class="card-title mb-0">Getting Started</h4>
@@ -24,7 +24,7 @@ stack and is one of its main stakeholders.
     </div>
     <div class="col-sm-6">
       <a href="{{ '/documents' | relative_url }}" class="text-decoration-none">
-        <div class="card h-100 text-center fcc-nav-card">
+        <div class="card h-100 text-center fcc-nav-card" style="border-top: 4px solid #6f42c1;">
           <div class="card-body d-flex flex-column align-items-center justify-content-center py-4">
             <img src="assets/img/presentations.png" width="100px" class="mb-3">
             <h4 class="card-title mb-0">Publications and Presentations</h4>
@@ -34,7 +34,7 @@ stack and is one of its main stakeholders.
     </div>
     <div class="col-sm-6">
       <a href="{{ '/software' | relative_url }}" class="text-decoration-none">
-        <div class="card h-100 text-center fcc-nav-card">
+        <div class="card h-100 text-center fcc-nav-card" style="border-top: 4px solid #0d6efd;">
           <div class="card-body d-flex flex-column align-items-center justify-content-center py-4">
             <img src="assets/img/coding.png" width="100px" class="mb-3">
             <h4 class="card-title mb-0">Software</h4>
@@ -44,7 +44,7 @@ stack and is one of its main stakeholders.
     </div>
     <div class="col-sm-6">
       <a href="{{ '/analysis.html' | relative_url }}" class="text-decoration-none">
-        <div class="card h-100 text-center fcc-nav-card">
+        <div class="card h-100 text-center fcc-nav-card" style="border-top: 4px solid #dc3545;">
           <div class="card-body d-flex flex-column align-items-center justify-content-center py-4">
             <img src="assets/img/data-analysis.png" width="100px" class="mb-3">
             <h4 class="card-title mb-0">FCC Analysis</h4>
@@ -56,6 +56,7 @@ stack and is one of its main stakeholders.
 </div>
 <br>
 
+<div style="border-top: 4px solid #0d6efd; margin-bottom: 0.75rem;"></div>
 <center><h3>Current organization</h3></center>
 
 <div class="container-fluid px-0">
@@ -66,7 +67,7 @@ stack and is one of its main stakeholders.
           <div class="row g-2 h-100">
             {% for sub in group.sub %}
             <div class="col-6 d-flex">
-              <div class="card w-100 psc-group-card text-center">
+              <div class="card w-100 psc-group-card text-center" {% if sub.color %}style="border-top: 3px solid {{ sub.color }};"{% endif %}>
                 <div class="card-body d-flex flex-column align-items-center justify-content-center py-2 px-1">
                   <div class="fw-semibold small">
                     {% if forloop.first and group.local_link %}
@@ -87,7 +88,7 @@ stack and is one of its main stakeholders.
         </div>
       {% else %}
         <div class="col-md-4 col-sm-6">
-          <div class="card h-100 psc-group-card text-center">
+          <div class="card h-100 psc-group-card text-center" {% if group.color %}style="border-top: 3px solid {{ group.color }};"{% endif %}>
             <div class="card-body d-flex flex-column align-items-center justify-content-center py-2">
               <div class="fw-semibold small">
                 {% if group.local_link %}
