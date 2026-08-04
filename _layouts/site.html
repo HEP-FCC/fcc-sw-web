@@ -19,9 +19,10 @@
     {% endif %}
     <article class="container mt-5">
         <div class="row">
-            <div class="col-lg-9">
+            <div class="{% if page.show_sidebar %}col-lg-9{% else %}col{% endif %}">
                 {{ content }}
             </div>
+            {% if page.show_sidebar %}
             <div class="col-lg-3">
                 <p class="h3">FCC Software Meetings</p>
                 <div class="ratio ratio-fccsw-meetings">
@@ -29,6 +30,7 @@
                           title="FCC Software Meetings"></iframe>
                 </div>
             </div>
+            {% endif %}
         </div>
     </article>
     {% include footer.html %}

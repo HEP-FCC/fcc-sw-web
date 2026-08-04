@@ -11,41 +11,46 @@ stack and is one of its main stakeholders.
 
 
 <div class="container">
-  <div class="row">
-    <div class="col">
-    <center><h4>
-    <a href="{{ '/getting_started' | relative_url }}">Getting Started</a>
-    <br>
-    <br>
-    <img src="assets/img/getting-started.png" width="150px">
-    </h4></center>
+  <div class="row g-4">
+    <div class="col-sm-6">
+      <a href="{{ '/getting_started' | relative_url }}" class="text-decoration-none">
+        <div class="card h-100 text-center fcc-nav-card">
+          <div class="card-body d-flex flex-column align-items-center justify-content-center py-4">
+            <img src="assets/img/getting-started.png" width="100px" class="mb-3">
+            <h4 class="card-title mb-0">Getting Started</h4>
+          </div>
+        </div>
+      </a>
     </div>
-    <div class="col">
-    <center><h4>
-    <a href="{{ '/documents' | relative_url }}">Publications and Presentations</a>
-    <br>
-    <br>
-    <img src="assets/img/presentations.png" width="150px">
-    </h4></center>
+    <div class="col-sm-6">
+      <a href="{{ '/documents' | relative_url }}" class="text-decoration-none">
+        <div class="card h-100 text-center fcc-nav-card">
+          <div class="card-body d-flex flex-column align-items-center justify-content-center py-4">
+            <img src="assets/img/presentations.png" width="100px" class="mb-3">
+            <h4 class="card-title mb-0">Publications and Presentations</h4>
+          </div>
+        </div>
+      </a>
     </div>
-  </div>
-  <br>
-  <div class="row">
-    <div class="col">
-    <center><h4>
-    <a href="{{ '/software' | relative_url }}">Software</a>
-    <br>
-    <br>
-    <img src="assets/img/coding.png" width="150px">
-    </h4></center>
+    <div class="col-sm-6">
+      <a href="{{ '/software' | relative_url }}" class="text-decoration-none">
+        <div class="card h-100 text-center fcc-nav-card">
+          <div class="card-body d-flex flex-column align-items-center justify-content-center py-4">
+            <img src="assets/img/coding.png" width="100px" class="mb-3">
+            <h4 class="card-title mb-0">Software</h4>
+          </div>
+        </div>
+      </a>
     </div>
-    <div class="col">
-    <center><h4>
-    <a href="{{ '/computing' | relative_url }}">Analysis and Computing</a>
-    <br>
-    <br>
-    <img src="assets/img/data-analysis.png" width="150px">
-    </h4></center>
+    <div class="col-sm-6">
+      <a href="{{ '/computing' | relative_url }}" class="text-decoration-none">
+        <div class="card h-100 text-center fcc-nav-card">
+          <div class="card-body d-flex flex-column align-items-center justify-content-center py-4">
+            <img src="assets/img/data-analysis.png" width="100px" class="mb-3">
+            <h4 class="card-title mb-0">Analysis and Computing</h4>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </div>
