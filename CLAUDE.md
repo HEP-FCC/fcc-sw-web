@@ -2,11 +2,9 @@
 
 ## Building the site locally
 
-Use the `webdev` conda environment:
-
 ```bash
 conda run -n webdev bundle exec jekyll serve
-conda run -n webdev bundle exec jekyll build
+conda run -n webdev env JEKYLL_ENV=production bundle exec jekyll build
 ```
 
 ## Adding publications from arXiv
