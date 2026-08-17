@@ -14,4 +14,5 @@ conveners:
 * Rucio - Coming soon
 * Monitoring dashboards - Coming soon
 * [Computing at CERN]({{ '/computing_at_cern.html' | relative_url }}): batch, EOS storage, and access from outside CERN
+* [EuroHPC GPU resources]({{ '/computing_eurohpc.html' | relative_url }})
 
