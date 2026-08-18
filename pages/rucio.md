@@ -96,7 +96,9 @@ the Rucio authentication server for a token.
 ```
 
 Open the URL in a browser and log in with your CERN account via "CERN SSO / eduGAIN".
-If your FCC Rucio account is already set up, you will see a confirmation page like this:
+If this is your first time using the FCC Rucio service, a one-time account
+approval is required before you can proceed — see the [next section](#one-time-account-approval).
+If your account is already set up, you will see a confirmation page like this:
 
 ![Rucio login confirmation page]({{ '/assets/img/rucio_login.png' | relative_url }}){: style="max-width: 375px; display: block; margin: 1rem auto;" }
 
@@ -122,7 +124,25 @@ Your Rucio client is now set up for use.
 
 ## One-time account approval
 
-*Content coming soon.*
+Note: Currently this section is likely not yet correct...
+
+If you do not yet have an FCC Rucio account, clicking "Apply for an account" on
+the login page will take you to a registration form. Fill in your details and,
+importantly, provide a clear explanation of your motivation in the **Notes**
+field — this will speed up the approval process:
+
+![Rucio account registration form]({{ '/assets/img/rucio_register.png' | relative_url }}){: style="max-width: 375px; display: block; margin: 1rem auto;" }
+
+If the form is submitted successfully, the [IAM dashboard](https://fcc-auth.cern.ch/dashboard#!/home)
+will confirm your registration:
+
+![IAM for FCC dashboard after successful registration]({{ '/assets/img/rucio_iam_dashboard.png' | relative_url }}){: style="max-width: 375px; display: block; margin: 1rem auto;" }
+
+Once submitted, your request will be reviewed by the FCC Rucio administrators.
+You will be notified by email when your account has been approved. This is a
+manual process — if you have not heard back within a reasonable time, do not
+hesitate to reach out for help via the channels listed in the
+[Getting help](#getting-help) section.
 
 ## Scopes
 
