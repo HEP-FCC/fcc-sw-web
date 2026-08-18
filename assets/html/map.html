@@ -27,7 +27,7 @@
       marker.addTo(group);
     });
     group.addTo(map);
-    map.fitBounds(group.getBounds().pad(0.2));
+    map.fitBounds(group.getBounds().pad(0.1), {maxZoom: 5});
   </script>
 </body>
 </html>

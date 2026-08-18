@@ -12,7 +12,40 @@ use the Rucio client to find FCC samples.
 
 ## FCC Data Federation
 
-*Content coming soon.*
+<table style="border-collapse:collapse; width:100%;">
+<thead><tr><th width="23%" style="border:1px solid var(--bs-border-color); padding:0.4rem 0.6rem;">Active RSEs</th><th style="border:1px solid var(--bs-border-color); padding:0.4rem 0.6rem; min-width:8rem;">Site</th><th style="border:1px solid var(--bs-border-color); padding:0.4rem 0.6rem;">Map</th></tr></thead>
+<tr>
+<td style="vertical-align:top; border:1px solid var(--bs-border-color); padding:0; font-size:0.8rem;">
+<div style="border-bottom:1px solid var(--bs-border-color); padding:0.3rem 0.6rem;">CERN_PROD_DISK</div>
+<div style="border-bottom:1px solid var(--bs-border-color); padding:0.3rem 0.6rem;">CERN_WINTER2023_DELPHES_DISK</div>
+<div style="border-bottom:1px solid var(--bs-border-color); padding:0.3rem 0.6rem;">CERN_WINTER23_DISK</div>
+<div style="border-bottom:1px solid var(--bs-border-color); padding:0.3rem 0.6rem;">FCC_PROD_PHYS_HIGGS</div>
+<div style="border-bottom:1px solid var(--bs-border-color); padding:0.3rem 0.6rem;">FCC_PROD_PHYS_TOP</div>
+<div style="border-bottom:1px solid var(--bs-border-color); padding:0.3rem 0.6rem;">FCC_PROD_PHYS_TOP_BACKUP</div>
+<div style="border-bottom:1px solid var(--bs-border-color); padding:0.3rem 0.6rem;">FCC_TEST_1</div>
+<div style="border-bottom:1px solid var(--bs-border-color); padding:0.3rem 0.6rem;">INFN_BARI_DISK</div>
+<div style="border-bottom:1px solid var(--bs-border-color); padding:0.3rem 0.6rem;">INFN_CNAF_DISK</div>
+<div style="border-bottom:1px solid var(--bs-border-color); padding:0.3rem 0.6rem;">SK_IEPSAS_DISK</div>
+<div style="padding:0.3rem 0.6rem;">US_MIT_DISK</div>
+</td>
+<td style="vertical-align:top; border:1px solid var(--bs-border-color); padding:0; font-size:0.8rem;">
+<div style="border-bottom:1px solid var(--bs-border-color); padding:0.3rem 0.6rem;">CERN (CH)</div>
+<div style="border-bottom:1px solid var(--bs-border-color); padding:0.3rem 0.6rem;">CERN (CH)</div>
+<div style="border-bottom:1px solid var(--bs-border-color); padding:0.3rem 0.6rem;">CERN (CH)</div>
+<div style="border-bottom:1px solid var(--bs-border-color); padding:0.3rem 0.6rem;">CERN (CH)</div>
+<div style="border-bottom:1px solid var(--bs-border-color); padding:0.3rem 0.6rem;">CERN (CH)</div>
+<div style="border-bottom:1px solid var(--bs-border-color); padding:0.3rem 0.6rem;">CERN (CH)</div>
+<div style="border-bottom:1px solid var(--bs-border-color); padding:0.3rem 0.6rem;">CERN (CH)</div>
+<div style="border-bottom:1px solid var(--bs-border-color); padding:0.3rem 0.6rem;">INFN, Bari (IT)</div>
+<div style="border-bottom:1px solid var(--bs-border-color); padding:0.3rem 0.6rem;">CNAF (IT)</div>
+<div style="border-bottom:1px solid var(--bs-border-color); padding:0.3rem 0.6rem;">IEPSAS (SK)</div>
+<div style="padding:0.3rem 0.6rem;">MIT (US)</div>
+</td>
+<td style="vertical-align:top; border:1px solid var(--bs-border-color); padding:0; height:100%;">
+<iframe src="{{ '/assets/html/map.html' | relative_url }}" width="100%" height="100%" style="border:none; display:block; min-height:250px;"></iframe>
+</td>
+</tr>
+</table>
 
 ## Rucio client setup
 
