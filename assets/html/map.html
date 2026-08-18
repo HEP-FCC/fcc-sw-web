@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>HSF India Sites</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <style>
+    body, html { margin: 0; padding: 0; height: 100%; }
+    #map { height: 100vh; width: 100%; }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    const MARKERS = [{"label": "MIT", "lat": 42.360091, "lng": -71.09416, "address": "77 Massachusetts Ave, Cambridge, MA 02139, USA"}, {"label": "CERN", "lat": 46.2329733, "lng": 6.0555723, "address": "Espl. des Particules 1, 1217, Switzerland"}, {"label": "INFN, Bari", "lat": 41.1080842, "lng": 16.8836138, "address": "Via Giovanni Amendola, 173, 70125 Bari BA, Italy"}, {"label": "INFN, CNAF", "lat": 44.5011351, "lng": 11.3574386, "address": "Viale Carlo Berti Pichat, 6, 40127 Bologna BO, Italy"}, {"label": "Institute of Experimental Physics, Ko\u0161ice, Slovakia", "lat": 48.7338858, "lng": 21.2381383, "address": "Watsonova 1935/47, 040 01 Ko\u0161ice, Slovakia"}];
+
+    const map = L.map("map");
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution: "&copy; OpenStreetMap contributors"
+    }).addTo(map);
+
+    const group = L.featureGroup();
+    MARKERS.forEach(function(m) {
+      const marker = L.marker([m.lat, m.lng])
+        .bindPopup("<strong>" + m.label + "</strong><br>" + m.address);
+      marker.addTo(group);
+    });
+    group.addTo(map);
+    map.fitBounds(group.getBounds().pad(0.2));
+  </script>
+</body>
+</html>
