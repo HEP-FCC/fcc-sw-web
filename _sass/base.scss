@@ -45,7 +45,8 @@ article pre {
   background: var(--bs-secondary-bg);
   color: var(--bs-body-color);
   border-radius: $border-radius;
-  padding: $spacer;
+  padding: ($spacer * 0.5) $spacer;
+  font-size: 0.8rem;
 }
 
 .fcc-logo {
