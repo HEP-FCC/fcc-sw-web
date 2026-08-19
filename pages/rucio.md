@@ -294,6 +294,10 @@ lets you search for datasets by scope and name pattern:
 
 ![Rucio web UI DID search]({{ '/assets/img/rucio_webui_dids.png' | relative_url }}){: style="max-width: 75%; display: block; margin: 1rem auto;" }
 
+## Quota policies
+
+Coming soon...
+
 ## Getting help
 
 All Rucio commands are documented via `rucio -h` or `rucio <command> -h`. For
